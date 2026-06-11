@@ -1,2 +1,3 @@
 # ImAllEars
-Python application to search for keywords in telegram channels using telethon
+## Build to help find missing people in Telegram search and rescue channels.
+
