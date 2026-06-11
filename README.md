@@ -22,18 +22,21 @@ Do you need to search a ton of Telegram channels for a specific keyword? Maybe y
 Then you can use AllEars to monitor for your keywords and even search past chat messages to not miss out!
 <br>
 
+## Supported plattforms
+The application works on Windows and on Linux as long as all dependencies are installed (tested), mac remains untested, but should work just fine.
+
 ## How to use
 Firstly log in to your [Telegram core](https://my.telegram.org) and create a new application, remember the API_ID and the API_HASH.
 <ul>
-  <li>1. Clone the repo using <code>git clone https://github.com/OrthBoi/ImAllEars.git</code>.</li>
-  <li>2. Go into the repo using <code>cd ImAllEars</code>.</li>
-  <li>3. Create a new file named ".env" and add "API_ID=your custom api id" to line 1 and "API_HASH=your custom api hash" to line 2, do not put the numbers in "".</li>
-  <li>4. Go into main.py and under the #CUSTOM section add your desired keywords and give your application a custom session name</li>
-  <li>5. Rightclick the folder and click on "open in terminal"</li>
-  <li>6. Create a virtual environment using <code>python -m venv venv</code> (if that doesnt work, try python3) </li>
-  <li>7. Go into the virtual environment using <code>source venv/bin/activate</code></li>
-  <li>7. Install the requirements usin <code>pip install -r requirements.txt</code></li>
-  <li>8. Lastly, run <code>python main.py</code></li>
+  <li>Clone the repo using <code>git clone https://github.com/OrthBoi/ImAllEars.git</code>.</li>
+  <li>Go into the repo using <code>cd ImAllEars</code>.</li>
+  <li>Create a new file named ".env" and add "API_ID=your custom api id" to line 1 and "API_HASH=your custom api hash" to line 2, do not put the numbers in "".</li>
+  <li>Go into main.py and under the #CUSTOM section add your desired keywords and give your application a custom session name</li>
+  <li>Rightclick the folder and click on "open in terminal"</li>
+  <li>Create a virtual environment using <code>python -m venv venv</code> (if that doesnt work, try python3) </li>
+  <li>Go into the virtual environment using <code>source venv/bin/activate</code></li>
+  <li>Install the requirements usin <code>pip install -r requirements.txt</code></li>
+  <li>Lastly, run <code>python main.py</code></li>
 </ul>
 
 You will get a notification in your private favorites chat if the programm detects any matched, it will tell you the channel name, the message id, the datetime and the content of the message.
