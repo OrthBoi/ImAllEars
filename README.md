@@ -3,21 +3,22 @@
 ## Live monitoring and history search for keywords using Telegram API
 history search feature yet to be implemented
 <br>
-### Technologies used
+## Technologies used
 <img align="left" width="30px" src="https://camo.githubusercontent.com/b024a703f6c1dc4fca503f2d8663b6c69e2f2b8473e6461c35ed1ebbb4d3eabc/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e406c61746573742f69636f6e732f707974686f6e2f707974686f6e2d6f726967696e616c2e737667" data-canonical-src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" style="max-width: 100%;">
 <img align="left" src="https://api.iconify.design/logos:telegram.svg" alt="telegram" width="30" height="30" />
 <br>
-### Features
+<br>
+## Features
 
 - Live monitoring
 - History search (soon)
 - Personal notification in the "favorite" chat of the Telegram user
 <br>
-### Description
+## Description
 Do you need to search a ton of Telegram channels for a specific keyword? Maybe you lost a close relative and want to search his name in search and rescue groups? Maybe you are interested in a specific topic and want to be notified?<br>
 Then you can use AllEars to monitor for your keywords and even search past chat messages to not miss out!
 <br>
-### How to use
+## How to use
 Firstly log in to your [Telegram core] (https://my.telegram.org) and create a new application, remember the API_ID and the API_HASH.
 <ul>
   <li>1. Clone the repo using <code>git clone https://github.com/OrthBoi/ImAllEars.git</code>.</li>
