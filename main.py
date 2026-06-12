@@ -3,11 +3,13 @@ import asyncio
 from dotenv import load_dotenv
 import telethon
 from telethon import events
+import datetime
 
 load_dotenv(override=True)
 #Be sure to create a .env file and add your API ID & HASH there.
 API_ID = os.environ.get("API_ID")
 API_HASH = os.environ.get("API_HASH")
+wantsHistorySearch = False
 
 #CUSTOM - Add your keywords here, you can also change the session name which is purely cosmetic
 session_name = "all_ears"
@@ -17,6 +19,24 @@ keywords = [
 
 client = telethon.TelegramClient(session_name, API_ID, API_HASH)
 print(f"Connection successfull. Session name: {session_name}")
+while True:
+    try:
+        answer = input("Do you want to scan past messages up to a certain date? [y][n]").lower()
+        if answer == "n" or answer == "no":
+            break
+        answerDate = input("\nPlease enter the date up to which you want to scan messages for. Please make sure to strictly use the following format: day,month,year: ")    
+        d, m, y = map(int, answerDate.replace(" ", "").split(","))
+        targetDate = datetime.date(y, m, d)
+        currentDate = datetime.date.today()
+        print(targetDate)
+        print(currentDate)
+        if currentDate > targetDate:
+             print("Date has NOT passed")
+        else:
+             print("Date has passed")
+    except Exception as e:
+         print("Error", e)
+
 
 
 @client.on(events.NewMessage)   
