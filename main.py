@@ -5,12 +5,14 @@ import telethon
 from telethon import events
 
 load_dotenv(override=True)
+#Be sure to create a .env file and add your API ID & HASH there.
 API_ID = os.environ.get("API_ID")
 API_HASH = os.environ.get("API_HASH")
 
-session_name = "all_ears_session"
+#CUSTOM - Add your keywords here, you can also change the session name which is purely cosmetic
+session_name = "all_ears"
 keywords = [
-    "test", "anotherone"
+    "your keywords seperated by a , each"
 ]
 
 client = telethon.TelegramClient(session_name, API_ID, API_HASH)
