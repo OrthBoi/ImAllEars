@@ -1,7 +1,7 @@
 # 👂AllEars
 
 ## Live monitoring and history search for keywords using Telegram API
-*history search feature yet to be implemented
+
 <br>
 
 ## Technologies used
@@ -13,7 +13,7 @@
 ## Features
 
 - Live monitoring
-- History search (soon)
+- History search
 - Personal notification in the "favorite" chat of the Telegram user
 <br>
 
