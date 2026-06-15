@@ -7,7 +7,7 @@
 ## Technologies used
 
 <img align="left" width="30px" src="https://camo.githubusercontent.com/b024a703f6c1dc4fca503f2d8663b6c69e2f2b8473e6461c35ed1ebbb4d3eabc/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e406c61746573742f69636f6e732f707974686f6e2f707974686f6e2d6f726967696e616c2e737667" data-canonical-src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" style="max-width: 100%;">
-<img align="left" src="https://api.iconify.design/logos:telegram.svg" alt="telegram" width="30" height="30" />
+<img align="left" src="https://api.iconify.design/logos:telegram.svg" alt="telegram" width="30" style="max-width: 100%;/>
 
 <br>
 
