@@ -1,61 +1,80 @@
-# 👂AllEars
+# 👂 AllEars
 
-## Live monitoring and history search for keywords using Telegram API
+**Live Telegram keyword monitoring and historical message search using Telethon**
 
-<br>
 
-## Technologies used
 
-<img align="left" width="30px" src="https://camo.githubusercontent.com/b024a703f6c1dc4fca503f2d8663b6c69e2f2b8473e6461c35ed1ebbb4d3eabc/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e406c61746573742f69636f6e732f707974686f6e2f707974686f6e2d6f726967696e616c2e737667" data-canonical-src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" style="max-width: 100%;">
-<img align="left" src="https://api.iconify.design/logos:telegram.svg" alt="telegram" width="30" style="max-width: 100%;/>
+## 🧠 Overview
 
-<br>
+AllEars is a lightweight Telegram monitoring tool that scans channels and groups for user-defined keywords.
 
-## Features
-- Real-time Telegram message monitoring across channels and groups
-- Historical message scanning (in development / experimental)
-- Keyword-based alerts delivered directly to your Telegram Saved Messages (“Favorites”) chat
-- Lightweight and self-hosted — runs on your own account using Telethon
+It runs on your own Telegram account using the Telethon API and delivers alerts directly to your “Saved Messages” chat.
 
-<br>
 
-## Description
-**AllEars** is a Telegram monitoring tool that tracks messages across channels and groups based on user defined keywords.
 
-It can be used to:
-- Monitor large amounts of Telegram channels without manually checking each one
-- Track specific names, topics, or terms across public discussions
-- Receive instant notifications when relevant messages appear
-- Optionally scan historical messages to recover past matches
+## ⚙️ Features
 
-Whether you're tracking information across communities or simply trying to avoid missing important mentions, AllEars automates the process of searching and alerting.
+- 🔴 Real-time monitoring of Telegram channels and groups  
+- 📜 Historical message scanning (beta)  
+- 🔑 Keyword-based detection system  
+- 📩 Instant notifications via Telegram “Saved Messages”
+- 📜 Logfile for each alert
+- 💻 Fully self-hosted (runs locally on your machine)
 
-<br>
 
-## Supported Platforms
 
-- Windows ✔
-- Linux ✔ (tested)
-- macOS ⚠ (untested, likely functional but not verified)
+## 🧰 Tech Stack
 
-Requires Python 3.9+ and Telethon compatible environment.
+- Python 3.9+
+- Telethon
+- python-dotenv
 
-<br>
 
-## How to use
 
-Firstly log in to your [Telegram core](https://my.telegram.org) and create a new application, remember the API_ID and the API_HASH.
+## 📦 Supported Platforms
 
-<ul>
-  <li>Clone the repo using <code>git clone https://github.com/OrthBoi/ImAllEars.git</code>.</li>
-  <li>Go into the repo using <code>cd ImAllEars</code>.</li>
-  <li>Create a new file named ".env" and add "API_ID=your custom api id" to line 1 and "API_HASH=your custom api hash" to line 2, do not put the numbers in "".</li>
-  <li>Go into main.py and under the #CUSTOM section add your desired keywords and give your application a custom session name</li>
-  <li>Rightclick the folder and click on "open in terminal"</li>
-  <li>Create a virtual environment using <code>python -m venv venv</code> (if that doesnt work, try python3) </li>
-  <li>Go into the virtual environment using <code>source venv/bin/activate</code></li>
-  <li>Install the requirements usin <code>pip install -r requirements.txt</code></li>
-  <li>Lastly, run <code>python main.py</code></li>
-</ul>
+- Windows ✔ (tested) 
+- Linux ✔ (tested)  
+- macOS ⚠ (untested, likely compatible)
 
-You will get a notification in your private favorites chat if the programm detects any matched, it will tell you the channel name, the message id, the datetime and the content of the message.
+
+
+## INSTALLATION & SETUP
+
+### Create a Telegram API App
+
+Go to https://my.telegram.org
+
+Create a new application
+
+Copy your API_ID and API_HASH
+
+
+### Clone the repository
+
+git clone https://github.com/OrthBoi/ImAllEars.git
+
+<code>cd ImAllEars</code>
+
+Create a file named .env in the project folder
+
+Inside it write:
+
+API_ID=your_api_id
+
+API_HASH=your_api_hash
+
+### Create virtual environment
+<code>python -m venv venv</code>
+
+Activate it:
+
+Windows:
+<code>venv\Scripts\activate</code>
+
+Linux / macOS:
+<code>source venv/bin/activate</code>
+
+Install dependencies and run the programm
+<code>pip install -r requirements.txt</code>
+Run the program <code>python main.py</code>
