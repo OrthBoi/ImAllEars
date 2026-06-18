@@ -1,3 +1,8 @@
 *.env
 *.session
+*.session-journal
 venv/
+__pycache__/
+LICENSE
+log.txt
+keywords.txt
